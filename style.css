@@ -1,0 +1,86 @@
+
+:root{--pink:#ff4fd8;--purple:#8a35ff;--gold:#ffd84a;--orange:#ff8a24;--halloween:#24103d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#48145f 0%,#16051f 45%,#05020b 100%);color:#fff;font-family:system-ui,Arial,sans-serif;display:flex;justify-content:center;min-height:100vh;position:relative;overflow-x:hidden}body:before{content:'';position:fixed;inset:0;background:linear-gradient(180deg,rgba(7,2,20,.68),rgba(7,2,20,.86));pointer-events:none;z-index:-1}.app{width:min(100%,1180px);padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;z-index:0;background:linear-gradient(145deg,rgba(16,4,31,.82),rgba(28,7,40,.72));backdrop-filter:blur(2px);border:1px solid rgba(255,138,36,.42);border-radius:20px;box-shadow:0 0 28px #7d22ff44,inset 0 0 25px #ff7a1b12}.app:before,.app:after{position:absolute;pointer-events:none;z-index:3;font-size:clamp(24px,4vw,42px);filter:drop-shadow(0 0 9px #ff7a1b);opacity:.9}.app:before{content:'🕸️ 🎃';top:5px;left:8px}.app:after{content:'🦇 🕸️';top:5px;right:8px}.top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.brand{font-weight:1000;letter-spacing:1px;color:#ffb8f4;text-shadow:0 0 12px #ff28d0,0 0 24px #ff8a24;font-size:clamp(20px,4vw,32px);padding:22px 4px 4px}.stats{display:flex;gap:8px;flex-wrap:wrap}.stat{border:1px solid #a64cff;border-radius:10px;background:linear-gradient(135deg,#1b0931,#2b1039);padding:7px 12px;box-shadow:0 0 10px #6d20ff66, inset 0 0 10px #ff8a2412;font-weight:800;position:relative}.stat:before{content:'✦';color:#ff9b35;font-size:10px;margin-right:5px}.stat b{color:#ffe16a}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:12px;align-items:stretch}.game-main{min-width:0}.history{border:1px solid #ff8a24;border-radius:14px;background:linear-gradient(180deg,rgba(35,9,53,.97),rgba(9,2,23,.98));padding:12px;box-shadow:0 0 14px #6d20ff44,0 0 9px #ff8a2422;min-height:180px;max-height:610px;overflow:auto;position:relative}.history:after{content:'🕷️';position:absolute;right:12px;top:8px;font-size:22px;filter:drop-shadow(0 0 5px #ff8a24)}.history h2{margin:0 0 5px;color:#ff9ce9;font-size:17px}.history .sub{font-size:11px;color:#b9a7d8;margin-bottom:10px}.history-list{display:flex;flex-direction:column;gap:7px}.history-item{border:1px solid #58328b;background:#0c061b;border-radius:9px;padding:8px;font-size:12px;overflow-wrap:anywhere}.history-item b{display:block;color:#ffe16a;font-size:13px;margin-top:3px}.history-item .time{color:#a99acb;font-size:10px}.empty-history{font-size:12px;color:#b9a7d8;line-height:1.45}.board{position:relative;border:3px solid #a83cff;border-radius:14px;overflow:hidden;background:#100522;box-shadow:0 0 24px #d827ffbb, inset 0 0 34px #9a20e855;outline:1px solid #ff8a2488;outline-offset:3px}.board:before,.board:after{position:absolute;z-index:1;pointer-events:none;font-size:clamp(20px,3vw,34px);filter:drop-shadow(0 0 7px #ff8a24)}.board:before{content:'🕸️';left:5px;top:4px}.board:after{content:'🕸️';right:5px;bottom:4px}.board canvas{display:block;width:100%;height:auto;touch-action:none}.cover{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 15%,rgba(111,23,133,.45),transparent 48%),linear-gradient(145deg,rgba(10,1,24,.96),rgba(28,4,37,.97)),repeating-linear-gradient(135deg,rgba(255,117,31,.05) 0 2px,transparent 2px 22px);padding:14px;text-align:center;z-index:2}.cover:before,.cover:after{content:'🎃';position:absolute;font-size:clamp(28px,5vw,52px);filter:drop-shadow(0 0 12px #ff7a1b);animation:spookyGlow 2s ease-in-out infinite alternate}.cover:before{left:3%;bottom:4%}.cover:after{right:3%;top:4%}@keyframes spookyGlow{from{transform:rotate(-7deg) scale(.96);filter:drop-shadow(0 0 5px #ff7a1b)}to{transform:rotate(7deg) scale(1.05);filter:drop-shadow(0 0 15px #ff7a1b)}}.cover-art{display:block;width:clamp(110px,28vw,190px);height:auto;max-height:190px;object-fit:contain;margin:0 auto 8px;filter:drop-shadow(0 0 14px #ff4fd8)}.covercontent{position:relative;z-index:1;background:linear-gradient(145deg,rgba(18,4,36,.96),rgba(42,11,47,.96));border:2px solid #ff8a24;border-radius:18px;padding:clamp(15px,4vw,32px);max-width:550px;box-shadow:0 0 30px #ff22ce55,0 0 18px #ff8a2444}.covercontent:before{content:'☠️  ✦  🦇';display:block;color:#ffb24c;font-size:clamp(16px,3vw,24px);margin-bottom:8px;letter-spacing:5px}.cover h1{margin:0 0 8px;color:#ff8ae9;text-shadow:0 0 12px #f0f;font-size:clamp(27px,5vw,44px)}.cover p{line-height:1.45;margin:8px 0 18px}.btn{border:1px solid #ffe1a0;border-radius:12px;padding:12px 20px;font-weight:900;color:#230d2d;background:linear-gradient(135deg,#ffb347,#ff70df);box-shadow:0 4px 0 #8d2b75,0 0 15px #ff8a2466;cursor:pointer;font-size:16px}.btn:active{transform:translateY(2px)}.controls{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.help{color:#d9c8ff;font-size:13px}.pad{display:grid;grid-template-columns:repeat(3,50px);grid-template-rows:repeat(2,44px);gap:5px}.pad button{border:1px solid #ff8a24;background:linear-gradient(145deg,#291044,#160722);color:#fff;border-radius:10px;font-size:20px;font-weight:900;touch-action:manipulation;user-select:none;box-shadow:0 0 12px #8a35ff55,inset 0 0 8px #ff8a2418}.pad button[data-dir=up]{grid-column:2;grid-row:1}.pad button[data-dir=left]{grid-column:1;grid-row:2}.pad button[data-dir=down]{grid-column:2;grid-row:2}.pad button[data-dir=right]{grid-column:3;grid-row:2}.footer{text-align:center;color:#ffc17d;font-size:11px;text-shadow:0 0 8px #ff8a2455;padding:7px}.footer:before{content:'🦇  🎃  ';}.footer:after{content:'  🎃  🦇';}.hidden{display:none!important}@media(max-width:720px){.app:before,.app:after{font-size:19px;top:3px}.brand{padding-top:23px}.game-layout{grid-template-columns:1fr}.controls{margin-top:4px;justify-content:space-between;align-items:center;gap:8px}.help{flex:1;min-width:140px;font-size:12px}.pad{flex-shrink:0}.history{max-height:230px}.history-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:700px){.pad{grid-template-columns:repeat(3,54px);grid-template-rows:repeat(2,46px)}}
+
+.music-toggle{border:1px solid #ff8a24;border-radius:10px;padding:8px 11px;background:linear-gradient(135deg,#291044,#160722);color:#fff;font-weight:800;box-shadow:0 0 10px #8a35ff55;cursor:pointer;touch-action:manipulation}.music-toggle:active{transform:translateY(1px)}
+@media(max-width:600px){.music-toggle{font-size:12px;padding:7px 9px}}
+
+/* Portada completa proporcionada por el usuario; el juego no comienza hasta pulsar START */
+.cover{position:fixed;inset:0;width:100vw;height:100dvh;min-height:100vh;padding:0;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border:0;border-radius:0;background:#080111;z-index:1000}
+.cover:before,.cover:after{display:none}
+.cover .splash-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080111}
+.cover .splash-start{position:absolute;z-index:2;top:50%;bottom:auto;left:50%;transform:translate(-50%,-50%);min-width:150px;padding:14px 28px;border:2px solid #fff0a5;border-radius:16px;font-size:clamp(18px,4vw,24px);letter-spacing:2px;color:#25072d;background:linear-gradient(135deg,#ffb32e,#ff4fd8);box-shadow:0 0 18px #ff4fd8,0 0 35px #ff8a24;font-weight:1000}
+.cover .splash-start:active{transform:translate(-50%,-48%)}
+.cover .splash-start{width:max-content;max-width:88vw;font-family:fantasy,Georgia,serif;font-size:clamp(15px,3.5vw,25px);letter-spacing:1.3px;line-height:1.2;text-align:center;text-transform:uppercase;color:#fff6d6;text-shadow:2px 3px 0 #4c103a,0 0 8px #ff6a00,0 0 16px #ab00ed;box-shadow:0 0 0 3px #2d073d,0 0 20px #ff7600,0 0 40px #ad25eb;cursor:pointer;animation:caceriaGlow 2s ease-in-out infinite alternate}@keyframes caceriaGlow{from{filter:drop-shadow(0 0 3px #ff9e21)}to{filter:drop-shadow(0 0 13px #f84cff)}}
+.cover.hidden{display:none!important}
+@media(max-width:600px){.cover .splash-image{object-fit:contain}.cover .splash-start{top:50%;bottom:auto;min-width:230px;padding:13px 18px}}
+
+/* NUEVO NIVEL: cementerio maldito de Halloween */
+body{background:radial-gradient(ellipse at 50% 0%,#391127 0%,#090713 45%,#020208 100%)}
+.app{background:linear-gradient(155deg,rgba(15,7,24,.97),rgba(5,5,12,.99));border-color:#9b3a47;box-shadow:0 0 50px #b51b4d44,inset 0 0 50px #4b174633}
+.level-banner{min-height:104px;margin:2px 0 14px;display:flex;justify-content:space-around;align-items:center;text-align:center;gap:8px;padding:10px 6px;border:2px solid #a44b4c;border-radius:14px;background:radial-gradient(ellipse at 50% 110%,#8d332b77,transparent 65%),linear-gradient(180deg,#1d1228,#080710);box-shadow:0 0 22px #ff663744,inset 0 0 22px #000;position:relative;overflow:hidden}
+.level-banner:before{content:'🕸️';position:absolute;top:-10px;left:0;font-size:36px;opacity:.65}.level-banner:after{content:'🕸️';position:absolute;top:-10px;right:0;font-size:36px;opacity:.65}
+.level-banner strong{display:block;font-family:Georgia,serif;font-size:clamp(20px,4.5vw,35px);font-weight:1000;letter-spacing:1.5px;color:#ffb95f;text-shadow:2px 3px 0 #580d27,0 0 8px #ff562e,0 0 20px #c02c48}
+.level-banner small{display:block;color:#dbb7ca;font-size:clamp(9px,1.7vw,12px);font-weight:900;letter-spacing:2px}
+.level-banner em{display:block;font-size:clamp(10px,2vw,14px);font-style:normal;color:#ff779a;letter-spacing:2px;font-weight:800;margin-top:4px}
+.banner-bat{font-size:clamp(20px,4vw,38px);filter:drop-shadow(0 0 8px #ed4965)}
+.board{border:4px ridge #8b4856;border-radius:8px;background:#080910;box-shadow:0 0 32px #ed4c4755,inset 0 0 30px #000;outline:2px solid #342035;outline-offset:3px}
+.board:before{content:'🕸️';opacity:.7}.board:after{content:'🕸️';opacity:.7}
+.history{background:linear-gradient(180deg,#1d1422,#070710);border-color:#954d52}
+@media(max-width:600px){.level-banner{min-height:80px;margin-bottom:10px}.banner-bat{font-size:20px}.level-banner strong{letter-spacing:.5px}}
+
+/* Cinemática de captura de Halloween */
+.board{position:relative;overflow:hidden}
+.capture-fx{position:absolute;inset:0;z-index:40;pointer-events:none;display:none;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;background:radial-gradient(circle,rgba(94,9,58,.77),rgba(8,1,18,.94));color:#fff;text-align:center}
+.capture-fx.playing{display:flex;animation:captureScreen 2.3s ease both}
+.capture-flash{position:absolute;inset:0;background:#ff315e;opacity:0;animation:captureFlash 1.3s steps(1) 2}
+.capture-ring{position:absolute;width:95px;height:95px;border:5px solid #ff8c32;border-radius:50%;box-shadow:0 0 35px #ff3355,inset 0 0 30px #e91e63;animation:captureRing 1.4s ease-out forwards}
+.capture-ghost{font-size:clamp(66px,18vw,130px);filter:drop-shadow(0 0 20px #ff3355);animation:captureGhost 2.2s ease-in-out forwards;z-index:1}
+.capture-title{font-weight:1000;font-size:clamp(19px,5vw,36px);color:#ffce62;letter-spacing:1px;text-shadow:2px 3px #69072a,0 0 22px #ff314f;z-index:2;animation:captureTitle .6s ease-out both}
+.capture-sub{font-size:clamp(12px,3vw,19px);letter-spacing:3px;color:#e5b5ef;z-index:2}
+.replay-btn{display:block;margin:18px auto 0;padding:13px 20px;border:2px solid #ff9a39;border-radius:15px;background:linear-gradient(#781e4e,#35122c);color:#fff4c9;font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 0 16px #fa4d7a}
+@keyframes captureFlash{0%,15%,28%{opacity:.28}8%,22%,35%,100%{opacity:0}}
+@keyframes captureRing{0%{transform:scale(.1);opacity:1}100%{transform:scale(6);opacity:0}}
+@keyframes captureGhost{0%{transform:scale(.5) rotate(-15deg);opacity:0}25%{transform:scale(1.35) rotate(14deg);opacity:1}60%{transform:scale(1) rotate(-12deg);opacity:1}100%{transform:scale(.05) rotate(360deg);opacity:0}}
+@keyframes captureTitle{0%{transform:translateY(35px) scale(.6);opacity:0}100%{transform:translateY(0) scale(1);opacity:1}}
+@keyframes captureScreen{0%{opacity:0}8%,88%{opacity:1}100%{opacity:0}}
+
+/* Premio centrado en pantalla, sin necesidad de desplazarse */
+.cover.prize-cover{position:fixed;inset:0;z-index:1100;width:100vw;height:100dvh;min-height:0;padding:10px 12px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at center,#4d174e 0%,#12081e 68%,#05020c 100%);overflow-y:auto;overscroll-behavior:contain}
+.cover.prize-cover .prize-card{width:min(94vw,490px);max-height:calc(100dvh - 20px);overflow-y:auto;display:flex;flex-direction:column;align-items:center;gap:clamp(5px,1.4vh,12px);border:2px solid #ffae56;border-radius:18px;background:linear-gradient(165deg,#2e123b,#0c0819);padding:clamp(9px,2vh,18px);box-shadow:0 0 35px #fa4ad177;text-align:center}
+.cover.prize-cover .prize-illustration{width:100%;height:auto;max-height:min(43dvh,300px);object-fit:contain;border-radius:12px;display:block}
+.cover.prize-cover .prize-heading{font-family:Georgia,serif;color:#ffc979;font-size:clamp(16px,4.5vw,25px);margin:0;text-shadow:0 0 12px #e13e8e}
+.cover.prize-cover .prize-value{font-size:clamp(27px,8vw,45px);font-weight:1000;color:#ffe772;line-height:1.08;text-shadow:0 0 16px #ff882b}
+.cover.prize-cover .prize-note{font-size:clamp(11px,2.7vw,14px);color:#e9d8f3;margin:0;line-height:1.3}
+.cover.prize-cover .replay-btn{flex-shrink:0;margin:0;padding:10px 18px}
+@media(max-height:650px){.cover.prize-cover .prize-illustration{max-height:33dvh}.cover.prize-cover .prize-card{gap:4px;padding:8px}.cover.prize-cover .prize-note{font-size:11px}}
+
+/* Joystick analógico táctil estilo Halloween */
+.joystick-wrap{display:flex;flex-direction:column;align-items:center;gap:5px;flex-shrink:0}
+.joystick-label{font-size:11px;font-weight:900;color:#ffc56c;letter-spacing:1.1px;text-shadow:0 0 7px #e538c9}
+.joystick{width:126px;height:126px;border-radius:50%;position:relative;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;border:4px solid #c65dff;background:radial-gradient(circle at 45% 35%,#59276e 0%,#251136 50%,#0b0718 100%);box-shadow:0 0 0 4px #271032,0 0 20px #a83cffaa,inset 0 0 25px #000;display:grid;place-items:center}
+.joystick.active{border-color:#ff9d43;box-shadow:0 0 0 4px #271032,0 0 24px #ff8c3c,inset 0 0 25px #000;cursor:grabbing}
+.joystick-arrows{position:absolute;inset:0;display:grid;place-items:center;color:#d28cff;opacity:.35;font-size:65px;pointer-events:none}
+.joystick-knob{position:absolute;width:62px;height:62px;border-radius:50%;border:3px solid #ffc57b;background:radial-gradient(circle at 35% 25%,#a447bb,#53215f 65%,#250f34);box-shadow:0 5px 13px #000b,0 0 13px #ff9a41aa,inset 0 3px 6px #ffffff33;display:grid;place-items:center;font-size:27px;pointer-events:none;transition:transform .08s ease-out;will-change:transform}
+.joystick.active .joystick-knob{transition:none}
+@media(max-width:720px){.controls{justify-content:center;flex-direction:column;gap:10px}.help{text-align:center;min-width:0}.joystick{width:120px;height:120px}.joystick-knob{width:60px;height:60px}}
+
+/* Selector de controles accesible */
+.control-selector{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;margin:0 auto 7px}
+.control-selector .mode-btn{font:800 12px system-ui,sans-serif;color:#f9d9ff;background:#241033;border:2px solid #8049a0;border-radius:18px;padding:9px 13px;cursor:pointer;touch-action:manipulation}
+.control-selector .mode-btn.selected{background:linear-gradient(135deg,#8a207c,#4b155c);border-color:#ffb85d;box-shadow:0 0 12px #c23aa3;color:white}
+.arrow-pad{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(3,46px);gap:4px;place-items:center;touch-action:none}
+.arrow-pad button{width:52px;height:46px;background:linear-gradient(#6c307f,#32123e);color:#fff2c8;border:2px solid #d17cdd;border-radius:13px;font-size:25px;font-weight:900;touch-action:none;user-select:none;box-shadow:0 3px 0 #190b24}
+.arrow-pad button:active{transform:translateY(2px);box-shadow:0 1px 0 #190b24;background:#aa3887}
+.control-hidden{display:none!important}
+
+/* Número de intento destacado en la pantalla final, sin requerir scroll */
+.prize-attempt{margin:7px auto 5px;max-width:95%;padding:7px 10px;border:1px solid #ffa545;border-radius:12px;background:linear-gradient(90deg,rgba(41,9,54,.94),rgba(90,23,53,.92));color:#ffe6a5;font-size:clamp(12px,3.4vw,17px);font-weight:900;text-align:center;letter-spacing:.25px;text-shadow:0 1px 8px #fc6b28;box-shadow:0 0 14px rgba(233,91,237,.25)}
+@media(max-height:740px){.prize-attempt{padding:5px 8px;margin:4px auto;font-size:12px}}
+
+
+
+body{background:radial-gradient(ellipse at 52% 13%,#53234b 0%,#1d0b27 29%,#05050c 73%,#010105 100%)!important}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:repeating-linear-gradient(105deg,transparent 0 72px,rgba(120,52,118,.055) 74px 112px,transparent 128px 240px);animation:mistyFog 17s ease-in-out infinite alternate}
+@keyframes mistyFog{from{transform:translateX(-3%);opacity:.5}to{transform:translateX(3%);opacity:1}}
+.board{box-shadow:0 0 28px rgba(171,41,119,.52),0 0 55px rgba(75,18,99,.32),inset 0 0 36px #000!important}
+
